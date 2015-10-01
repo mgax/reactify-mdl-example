@@ -14,6 +14,6 @@ box.innerHTML =
 '    <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>\n'+
 '  </ul>\n'
 
-componentHandler.upgradeElement(box)
+componentHandler.upgradeDom()
 
 })();
