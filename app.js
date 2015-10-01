@@ -23,10 +23,13 @@ class Menu extends React.Component {
     )
   }
 
+  componentDidMount() {
+    componentHandler.upgradeDom()
+  }
+
 }
 
 var box = document.querySelector('#here')
-box.innerHTML = React.renderToStaticMarkup(<Menu />)
-componentHandler.upgradeDom()
+React.render(<Menu />, box)
 
 })();
